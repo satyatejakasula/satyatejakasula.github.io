@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Satya Kasula's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+/* In your CSS file */
+body {
+  padding-top: 70px; /* Adjust this value to the navbar's actual height */
+}
+.navbar{
+    padding-left: 0;
+    padding-right: 0;
+}
+.navbar-brand{
+    padding-left: 1rem;
+}
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar" style="padding-left: 0; padding-right: 0;">
+	    <div class="container-fluid">
+	      <a class="navbar-brand" href="index.html" style="padding-left: 1rem;">Satya Teja Kasula</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
+            <li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
+            <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="#awards-section" class="nav-link"><span>Awards</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <section id="home-section" class="hero">
+      <div class="home-slider owl-carousel">
+        <div class="slider-item">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row d-md-flex no-gutters slider-text align-items-center" style="display: flex;">
+    
+              <div class="ftco-animate" data-scrollax=" properties: { translateY: '70%' }" style="flex: 1;">
+                <div class="text">
+                  <span class="subheading">Hello!</span>
+                  <h1 class="mb-4 mt-3">I'm <span>Satya Teja Kasula</span></h1>
+                  <span id="typing-animation"></span>
+                  <script>
+
+                    // Initialize the typing animation
+                    const typingAnimationElement = document.getElementById('typing-animation');
+        
+                    // Create an array of typing text
+                    const typingTexts = [
+                    'Business Data Analyst    '
+                    ];
+        
+                    // Create a function to display the typing animation for a given text
+                    function playTypingAnimation(text) {
+                    // Loop through each character and add it to the element
+                    for (let i = 0; i < text.length; i++) {
+                      setTimeout(() => {
+                      typingAnimationElement.textContent += text[i];
+                      }, i * 200); // Increase the delay to slow down the typing animation
+                    }
+        
+                    // Once the animation is complete, reset the text and start over
+                    setTimeout(() => {
+                      typingAnimationElement.textContent = '';
+                      playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                    }, text.length * 200);
+                    }
+        
+                    // Start the typing animation loop
+                    playTypingAnimation(typingTexts[0]);
+        
+                    </script>
+                  <p> </p>  
+                  <p> </p> 
+                  <h6>Interested in collaborating or working together? Feel free to reach out via email! 📧 </h6>
+                  <p> </p>  
+                  <p> </p> 
+                  <p>
+                    <a href="#contact-section" class="btn btn-primary py-3 px-4">Hire Me</a>
+                    <a href="https://drive.google.com/file/d/1SLAXT6Rl9t1lGCWtST3FqmYSq1rTScuJ/view?usp=share_link" class="btn btn-white btn-outline-white py-3 px-4">Download CV</a>
+                  </p>
+                </div>
+              </div>
+    
+              <div style="width: 350px; height: 350px; flex-shrink: 0; margin-left: 20px; border-radius: 0%; overflow: hidden;">
+                <img src="images/memoji.HEIC" alt="Your Portrait" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="row">
+              <div class="col-md-12 heading-section text-center ftco-animate">
+                <h1 class="big big-2">About</h1>
+                <h2 class="mb-4">About Me</h2>
+    
+                <div class="row" style="display: flex; align-items: center;">
+                  <div class="col-md-4" style="max-width: 30%;">
+                    <div style="aspect-ratio: 1/1; overflow: hidden; border-radius: 50%;">
+                      <img src="images/aboutme.jpg" class="img-fluid b-shadow-a" alt="Portrait" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                  </div>
+                  <div class="col-md-8" style="padding-left: 20px;">
+                    <p>I am a Business Data Analyst with over two years of experience specializing in data visualization and predictive modeling. My expertise lies in transforming legacy systems into dynamic Tableau and Power BI solutions, enhancing data accessibility and driving business growth.
+                      Proficient in Python, SQL, R, and cloud platforms like AWS and Azure, I deliver high-accuracy recommendations by leveraging statistical analysis, predictive modeling, and hypothesis testing to solve complex business challenges.
+                    </p>
+    
+                    <p>With a Master’s in Business Analytics from the University of Texas at Arlington and a Bachelor’s in Business Administration from Amity University, I bring a strong academic foundation to my work.
+                      Beyond data, I’m deeply interested in exploring the universe, human life, and spiritual journeys, which fuel my curiosity and broaden my perspective. Combining technical expertise with a passion for understanding both data and the deeper aspects of existence, I'm dedicated to creating impactful, data-driven solutions.
+                    </p>
+                    
+                    <p></p>
+                    <p><a href="https://www.linkedin.com/in/satyateja8/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+	
+  <section class="ftco-section ftco-no-pb" id="experience-section">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-10 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Experience</h1>
+          <h2 class="mb-4">Experience</h2>
+          <p>Business Data Analyst with 2+ years of experience in advanced visualizations and predictive modeling, driving data-driven business growth. Skilled in Python, SQL, Tableau, and cloud platforms, delivering high-accuracy insights and solutions.</p>
+        </div>
+      </div>
+  
+      <div class="row" style="display: flex; flex-wrap: wrap;"> <div class="col-md-6" style="display: flex; flex-direction: column;">
+          <div class="resume-wrap ftco-animate" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div> <span class="date">Feb.2024 - Present</span>
+              <h2>Business Data Analyst</h2>
+              <span class="position">Gap Inc.</span>
+              <p class="mt-4">USA
+                <ul>
+                  <li>Designed interactive dashboards and reports to enhance key metrics visualization, improving data accessibility by 25%.</li>
+                  <li>Collaborated with cross-functional teams to identify growth opportunities, driving a 15% increase in revenue.</li>
+                  <li>Ensured 99.5% data accuracy and reliability through rigorous monitoring and quality checks in business intelligence solutions.</li>
+                  <li>Implemented process improvements that reduced operational inefficiencies by 10% and automated reporting processes, cutting manual efforts by 30%.</li>
+                  <li>Delivered actionable, data-driven recommendations to senior management, significantly enhancing decision-making.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-6" style="display: flex; flex-direction: column;">
+          <div class="resume-wrap ftco-animate" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div> <span class="date">Jul.2023 - Dec.2023</span>
+              <h2>Data Analyst</h2>
+              <span class="position">Christus Health</span>
+              <p class="mt-4">Texas, USA
+                <ul>
+                  <li>Utilized Python for data cleaning, preprocessing, and advanced modeling to improve project outcomes and insights.</li>
+                  <li>Developed dynamic dashboards and reports in Power BI, enhancing data accessibility and visualization.</li>
+                  <li>Conducted rigorous data testing and validation to ensure high accuracy and reliability in analytics.</li>
+                  <li>Analyzed large datasets to support healthcare initiatives, increasing operational efficiency by 15%.</li>
+                  <li>Automated data analysis tasks and optimized data pipelines, reducing processing time by 20%.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <br>
+      <br>
+        
+      </div>
+    </div>
+  </section>
+
+
+  
+  <section class="ftco-section ftco-no-pb" id="education-section">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-10 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Education</h1>
+          <h2 class="mb-4">Education</h2>
+          <p>Master’s in Business Analytics with a background in Business Administration, specializing in data analysis and strategic decision-making. Certified in CS50x - Introduction to Computer Science from Harvard University.</p>
+        </div>
+      </div>
+  
+      <div class="row" style="display: flex; flex-wrap: wrap;"> <div class="col-md-6" style="display: flex; flex-direction: column;">
+          <div class="resume-wrap ftco-animate" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div> <span class="date">2022-2023</span>
+              <h2>Master of Science in Business Analytics</h2>
+              <span class="position">University of Texas at Arlington, USA</span>
+              <p class="mt-4">Grade: 3.6/4</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-6" style="display: flex; flex-direction: column;">
+          <div class="resume-wrap ftco-animate" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div> <span class="date">2018-2021</span>
+              <h2>Bachelor of Business Administration </h2>
+              <span class="position">Amity University, India</span>
+              <p class="mt-4">Grade: 9.44/10</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <h1 class="big-4">Certifications</h1>
+        <div class="underline"></div>
+      </div>
+      <br>
+      <div class="row"> <div class="col-md-6 mx-auto">
+        <div class="resume-wrap ftco-animate" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+          <div> <span class="date">2024</span>
+            <h2>CS50x - Introduction to Computer Science</h2>
+            <h6>
+              <a href="https://certificates.cs50.io/d8df65b5-7118-4ecd-bc00-0a52dafecbde.png?size=letter" target="_blank" rel="noopener noreferrer">Show Credential</a>
+            </h6>
+            <span class="position">Harvard University</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6 text-center ftco-animate">
+          <p><a href="https://drive.google.com/file/d/1SLAXT6Rl9t1lGCWtST3FqmYSq1rTScuJ/view?usp=share_link" class="btn btn-primary py-4 px-5">Download CV</a></p>
+        </div>
+      <br>
+      <br>
+        
+      </div>
+    </div>
+  </section>
+
+
+  <section class="ftco-section ftco-no-pb" id="skills-section">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-10 heading-section text-center ftco-animate">
+          <h1 class="big big-2"">Skills</h1>
+          <h2 class="mb-4"">Skills</h2>
+          <p>Proficient in programming (Python, R, SQL), data visualization (Tableau, Power BI), and statistical modeling (predictive analytics, time series). Skilled in cloud platforms (AWS, Azure), Agile methodologies, and leveraging tools like Pandas, NumPy, and Scikit-learn for data-driven insights</p>
+        </div>
+      </div>
+  
+      <div class="row" style="display: flex; flex-wrap: wrap;">
+        <div class="col-md-6" style="display: flex; flex-direction: column;">
+          <div class="resume-wrap ftco-animate" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h2><span style="color: #ffbd39;">Programming & Databases</span></h2>
+              <p>Python, R, SQL, Linux, MySQL, SQL Server, MongoDB</p>
+            </div>
+          </div>
+        </div>
+
+  
+        <div class="col-md-6" style="display: flex; flex-direction: column;">
+          <div class="resume-wrap ftco-animate" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h2><span style="color: #ffbd39;">Data Visualization</span></h2>
+              <p>Tableau, Power BI, Alteryx</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-6" style="display: flex; flex-direction: column;">
+          <div class="resume-wrap ftco-animate" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h2><span style="color: #ffbd39;">Programming Frameworks</span></h2>
+              <p>Pandas, NumPy, Scikit-Learn, Matplotlib, Forecast</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-6" style="display: flex; flex-direction: column;">
+          <div class="resume-wrap ftco-animate" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h2><span style="color: #ffbd39;">Analysis and Statistical Modeling</span></h2>
+              <p>Statistical Analysis, Predictive Modeling, Hypothesis Testing, Regression Analysis, Time Series Analysis</p>
+            </div>
+          </div>
+        </div>
+  
+
+        <div class="col-md-6" style="display: flex; flex-direction: column;">
+          <div class="resume-wrap ftco-animate" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h2><span style="color: #ffbd39;">Product and Project Management </span></h2>
+              <p>Product Lifecycle Management, Agile Methodologies, Requirement Analysis</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6" style="display: flex; flex-direction: column;">
+          <div class="resume-wrap ftco-animate" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h2><span style="color: #ffbd39;">Tools & Technologies</span></h2>
+              <p>Microsoft Excel, Draw.io, GitHub</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6" style="display: flex; flex-direction: column;">
+          <div class="resume-wrap ftco-animate" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h2><span style="color: #ffbd39;">Cloud Computing</span></h2>
+              <p>AWS, Azure</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6" style="display: flex; flex-direction: column;">
+          <div class="resume-wrap ftco-animate" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h2><span style="color: #ffbd39;">Business and Market Analysis  </span></h2>
+              <p>Market Research, Competitive Analysis, Financial Modeling</p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+
+  <section class="ftco-section" id="project-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-5">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Projects</h1>
+          <h2 class="mb-4">Projects</h2>
+          <p>Developed forecasting models using ARIMA, SARIMA, and other techniques to predict sales for Rossmann, and analyzed Twitter sentiments on COVID-19 vaccines using EDA and text processing tools. Explored the impact of sleep patterns on stress levels through regression analysis and created interactive Tableau dashboards to visualize key insights from the Paris 2024 Olympics.</p>
+        </div>
+      </div>
+      <div class="row d-flex">
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry justify-content-end">
+            <a href="#" class="block-20 zoom-effect" style="background-image: url('images/Rossman.jpeg');">
+            </a>
+            <div class="text mt-3 float-right d-block">
+
+              <h3 class="heading"><a href="#" style="color: #ffbd39">Forecasting Sales of Rossmann Drug Store Chain</a></h3>
+              <p>Utilized various forecasting methodologies like ARIMA, SARIMA, Holt-Winters, Dynamic Regression, and Vector Auto Regression in R language to
+                rigorously evaluate model performance, ultimately selecting the optimal model for precise year-ahead sales projections.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry justify-content-end">
+            <a href="#" class="block-20 zoom-effect" style="background-image: url('images/covid19.png');">
+            </a>
+            <div class="text mt-3 float-right d-block">
+
+              <h3 class="heading"><a href="#" style="color: #ffbd39">Sentiment & Exploratory Data analysis of Tweets on Covid-19 vaccines</a></h3>
+              <p>Leveraged Twitter API for data collection and performed EDA, data pre-processing, and text processing with TextBlob and Vader to analyze tweet
+                sentiments. This revealed trends during and post the COVID-19 era and identified influential factors.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry">
+            <a href="#" class="block-20 zoom-effect" style="background-image: url('images/sleep.png');">
+            </a>
+            <div class="text mt-3 float-right d-block">
+
+              <h3 class="heading"><a href="#" style="color: #ffbd39">Impact of sleep pattern on stress levels</a></h3>
+              <p>Examined heart rate, blood oxygen levels, and temperature through regression analysis and heat maps to establish a significant correlation between
+                insufficient sleep and elevated stress levels.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+<br>
+  <!-- added justify-content-center to center align the last two projects -->
+  <div class="row d-flex justify-content-center">  
+    <div class="col-md-4 d-flex ftco-animate">
+      <div class="blog-entry justify-content-end">
+      <a href="#" class="block-20 zoom-effect" style="background-image: url('images/paris.png');">
+      </a>
+      <div class="text mt-3 float-right d-block">
+
+        <h3 class="heading"><a href="#" style="color: #ffbd39">Paris 2024 Olympics Data Visualization</a></h3>
+        <p>Created interactive dashboards using Tableau to analyze key trends from the Paris 2024 Olympics, including medal distribution, age demographics, and top-performing countries. Visualized insights on gender representation and top sports, highlighting the global and inclusive nature of the games.</p>
+      </div>
+      </div>
+    </div>
+   </div>
+  </div>
+  </section>
+
+
+
+  <section class="ftco-section" id="awards-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-5">
+        <div class="col-md-15 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Awards</h1>
+          <h2 class="mb-4">Awards</h2>
+          <p>I am honored to have received the Silver Medal for achieving second place in academics during my Bachelor of Business Administration at Amity University. The program's excellence is reflected in its accreditation by prestigious organizations such as the NAAC (National Assessment and Accreditation Council), WASC (Senior College and University Commission, USA), and QAA Global (The Quality Assurance Agency). This recognition drives my passion for academic excellence and my commitment to continuous growth in my field.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center"> <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry justify-content-end">
+            <a  class="block-20 zoom-effect" style="background-image: url('images/amity_cert.jpg');">
+            </a>
+            <div class="text mt-3 float-right d-block">
+              <h3 class="heading"><a  style="color: #ffbd39;">Second in Academics Performance</a></h3>
+              <p>Issued by Amity University || NAAC || WASC || QAA Global · Dec 2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone"></span>
+          		</div>
+              <h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://5128277619" style="color: #ffbd39;">+1 (512)827-7619</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-envelope"></span>
+          		</div>
+              <h3 class="mb-4">Email</h3>
+              <p><a href="mailto:satyatejakasula8@gmail.com" style="color: #ffbd39;">satyatejakasula8@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-linkedin"></span>
+          		</div>
+          		<h3 class="mb-4">Linked In</h3>
+              <p><a href="https://www.linkedin.com/in/satyateja8/" style="color: #ffbd39;" >www.linkedin.com/in/satyateja8</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-file-pdf-o"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/1SLAXT6Rl9t1lGCWtST3FqmYSq1rTScuJ/view?usp=share_link" style="color: #ffbd39;">resumelink 🔗</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/ibW4C7rPSHFumPHw9" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Created by Satya Teja Kasula
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
